@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:text="Recolectores" />
+
+        <EditText
+            android:id="@+id/cedula"
+            android:layout_width="326dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Cedula"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="326dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nombre"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/apellido"
+            android:layout_width="326dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Apellido"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/kilos"
+            android:layout_width="323dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:hint="Kilos de cafe recogidos"
+            android:inputType="numberDecimal"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/valor"
+            android:layout_width="323dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:hint="Valor del kilo"
+            android:inputType="numberDecimal"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/rojo"
+            android:layout_width="127dp"
+            android:layout_height="45dp"
+            android:text="Grano rojo"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/prcRojo"
+            android:layout_width="193dp"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:hint="%"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="355dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/verde"
+            android:layout_width="130dp"
+            android:layout_height="44dp"
+            android:text="Grano verde"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="401dp"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/prcVerde"
+            android:layout_width="193dp"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:hint="%"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="401dp"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/medio"
+            android:layout_width="129dp"
+            android:layout_height="43dp"
+            android:text="Grano medio"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="446dp" />
+        <EditText
+            android:id="@+id/prcMedio"
+            android:layout_width="193dp"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:hint="%"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="443dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="511dp"
+        tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total acumulado:"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="601dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="0"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="601dp"
+            tools:ignore="MissingConstraints" />
+
+</LinearLayout>
+
